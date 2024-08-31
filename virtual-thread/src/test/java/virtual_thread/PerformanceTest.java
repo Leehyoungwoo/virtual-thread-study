@@ -22,7 +22,7 @@ public class PerformanceTest {
     @Test
     public void testUserAPICreateWithVirtualThreads() throws InterruptedException {
         String url = "http://localhost:8080/api/users";
-        int numThreads = 500;
+        int numThreads = 4057;
         ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor();
 
         long startTime = System.currentTimeMillis();
