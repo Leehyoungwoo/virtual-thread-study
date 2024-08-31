@@ -11,7 +11,7 @@ public class CpuPerformanceTest {
     @Test
     public void testCpuIntensiveTaskWithNativeThreads() throws InterruptedException {
         int numThreads = 500;
-        long number = 123456789012345L; // 소인수 분해할 큰 숫자
+        long number = 123456789012345L;
 
         ExecutorService executor = Executors.newFixedThreadPool(numThreads);
 

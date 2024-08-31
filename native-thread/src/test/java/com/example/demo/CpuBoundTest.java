@@ -17,7 +17,7 @@ public class CpuBoundTest {
 
     @Test
     public void testCpuBoundWithNativeThreads() throws InterruptedException {
-        int numThreads = 20; // 테스트할 스레드 수
+        int numThreads = 20;
         ExecutorService executor = Executors.newFixedThreadPool(numThreads);
 
         long startTime = System.currentTimeMillis();
